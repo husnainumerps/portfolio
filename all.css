@@ -1,0 +1,150 @@
+/*
+/* For the thumb (the part you drag) */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0) !important;
+    border-radius: 2px !important;
+}
+
+/* For the track (the background) */
+::-webkit-scrollbar-track {
+    background: lightgrey !important;
+}
+
+/* For the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 2px !important;
+}
+
+
+
+
+/* cursor ----------------------------*/
+
+.custom-cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* Ensure that the custom cursor doesn't block any interactions */
+    mix-blend-mode: difference;
+    /* This will invert the colors */
+    transition: width 0.3s, height 0.3s;
+    /* Smoothen the size change */
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* White background with slight transparency */
+}
+
+.cursor-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cursor-arrow {
+    font-size: 12px;
+    margin: 0 4px;
+    pointer-events: none;
+    /* Ensure arrows don't interfere with interactions */
+}
+
+.carousel-item:hover~.custom-cursor {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-item:hover~.custom-cursor .cursor-inner {
+    opacity: 1;
+}
+
+
+
+
+/*-----------------*/
+/**cursor**/
+.noc {
+    min-width: 100vw;
+}
+
+.link {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.cursor {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    left: -100px;
+    top: -100px;
+}
+
+.colo {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cod {
+    font-size: 5px;
+    font-weight: 500;
+}
+
+/**.outer {
+  border: 1px solid #f7f7f770;
+}**/
+
+.inn {
+    background: #fffffff6;
+    transition: 150ms ease-out;
+    mix-blend-mode: difference;
+    color: rgba(255, 255, 255, 0);
+}
+
+.cursor.hover {
+    transform: translate(-50%, -50%) scale(4);
+    transition: transform 250ms ease-in-out;
+    color: black;
+}
+
+.inn.hover {
+    background: #f7f7f7;
+    mix-blend-mode: difference;
+}
+
+
+.social-icons {
+    position: absolute;
+    top: 90%;
+    left: 11px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Spacing between icons */
+    z-index: 99;
+}
+
+.icon {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff; /* Or any color you prefer */
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #555; /* Darken color on hover */
+}

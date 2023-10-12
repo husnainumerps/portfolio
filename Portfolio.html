@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio - Husnain</title>
+    <link rel="icon" type="image/x-icon" href="flafel.jpeg">
+    <meta name="description"
+        content="Husnain Umer's portfolio showcasing web development projects, HTML tutorials, and more.">
+    <meta name="keywords" content="husnain, umer, husnain-umer, husnain-umer-portfolio, portfolio">
+    <meta name="author" content="Husnain umer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="english">
+    <meta name="rating" content="safe for kids">
+    <meta name="copyright" content="Copyright 2022">
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- <meta http-equiv="refresh" content="15"> -->
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="light.css">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelectorAll(".cursor");
+            const links = document.querySelectorAll(".link");
+            const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+            window.addEventListener("mousemove", (e) => {
+                let x = e.pageX;
+                let y = e.pageY;
+
+                cursor.forEach((el) => {
+                    el.style.left = `${x}px`;
+                    el.style.top = `${y}px`;
+
+                    links.forEach((link) => {
+                        link.addEventListener("mouseenter", () => {
+                            el.classList.add("hover");
+                        });
+                        link.addEventListener("mouseleave", () => {
+                            el.classList.remove("hover");
+                        });
+                    });
+                });
+            });
+        });
+</script>
+
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" type="text/css" href="mouse.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+
+    <style>
+  body {
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .navMenu {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+  }
+
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: inline-block;
+    width: 80px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navMenu a:hover {
+    color: rgba(255, 255, 255, 0.725);
+  }
+
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.2s ease-in-out;
+    z-index: 99;
+  }
+
+  .navMenu a:hover ~ .dot {
+    transform: translateX(30px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu a:nth-child(2):hover ~ .dot {
+    transform: translateX(110px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu a:nth-child(3):hover ~ .dot {
+    transform: translateX(200px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu a:nth-child(4):hover ~ .dot {
+    transform: translateX(285px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu a:nth-child(5):hover ~ .dot {
+    transform: translateX(383px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+    </style>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+.outerdiv
+{
+width: 100%;
+min-height: 100vh;
+/* background: #EDF2F8; */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.innerdiv
+{
+transform: scale(0.9);
+margin: 1rem;
+display: grid;
+grid-gap: 1.5rem;
+grid-template-rows: repeat(2,22rem);
+grid-template-columns: repeat(4,17rem);
+}
+.eachdiv
+{
+padding: 1rem 2rem;
+border-radius: 0.8rem;
+box-shadow: 5px 5px 20px #6d6b6b6b;
+color: white;
+}
+.div1
+{
+background: #733FC8;
+grid-column: 1/3;
+grid-row: 1/2;
+background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+background-repeat: no-repeat;
+background-position-x: 25rem;
+}
+.div2
+{
+background:#49556B;
+grid-column: 3/4;
+grid-row: 1/2;
+}
+.div3
+{
+background: white;
+grid-column: 4/5;
+grid-row: 1/3;
+color: black;
+}
+.div4
+{
+background: white;
+grid-column: 1/2;
+grid-row: 2/3;
+color: black;
+}
+.div5
+{
+background: #18202D;
+grid-column: 2/4;
+grid-row: 2/3;
+}
+.userdetails
+{
+display: flex;
+}
+.imgbox
+{
+margin-right: 1rem;
+}
+.imgbox img
+{
+border-radius: 50%;
+width: 2rem;
+border: 2px solid #cec5c5;
+}
+.detbox
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.detbox p
+{
+margin: 0;
+}
+.detbox .name
+{
+color: hsl(0, 0%, 81%);
+font-size: 0.9rem;
+margin-bottom: 0.1rem;
+font-weight: 600;
+}
+.detbox .name.dark
+{
+color: #49505A;
+}
+.detbox .designation
+{
+color: hsl(0, 0%, 81%);
+opacity: 50%;
+font-size: 0.8rem;
+}
+.detbox .designation.dark
+{
+color: #49505A;
+}
+.review h4
+{
+font-size: 1.4rem;
+color: #F3DEFF;
+font-weight: 600;
+line-height: 1.5;
+margin-bottom: 0.8rem;
+}
+.review.dark h4{
+color:#4B5258;
+}
+.review p
+{
+font-size: 0.95rem;
+color: #F3DEFF;
+font-weight: 500;
+opacity: 50%;
+line-height: 1.5;
+}
+.review.dark p{
+color: #0e0e0e;
+}
+.attribution
+{
+font-size: 1rem;
+line-height: 1.5;
+position: fixed;
+bottom: 1rem;
+right: 1rem;
+text-align: right;
+}
+.attribution a
+{
+text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px)
+{
+.innerdiv
+{
+transform: scale(0.7);
+}
+}
+@media only screen and (max-width: 800px)
+{
+.innerdiv
+{
+transform: scale(0.6);
+}
+}
+@media only screen and (max-width: 600px)
+{
+.div1 {
+background-position-x: 10rem;
+}
+.innerdiv
+{
+display: flex; 
+flex-direction: column;
+transform: scale(1);
+margin: 2rem;
+margin-bottom: 5rem;
+}
+.attribution
+{
+position: relative;
+}
+}
+
+
+/* from below */
+.gallery {
+display: flex;
+padding: 2px;
+transition: .3s;
+}
+
+.gallery:hover .gallery__image {
+filter: grayscale(1);
+}
+
+.gallery__column {
+display: flex;
+flex-direction: column;
+width: 25%;
+}
+
+.gallery__link {
+margin: 2px;
+overflow: hidden;
+}
+
+.gallery__link:hover .gallery__image {
+filter: grayscale(0);
+}
+
+.gallery__link:hover .gallery__caption {
+opacity: 1;
+}
+
+.gallery__thumb {
+position: relative;
+}
+
+.gallery__image {
+display: block;
+width: 100%;
+transition: .3s;
+}
+
+.gallery__image:hover {
+transform: scale(1.1);
+}
+
+.gallery__caption {
+position: absolute;
+bottom: 0;
+left: 0;
+padding: 25px 15px 15px;
+width: 100%;
+font-family: 'Raleway', sans-serif;
+font-size: 16px;
+color: white;
+opacity: 0;
+background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+transition: .3s;
+}
+
+</style>
+    
+</head>
+<body>
+    <div style="z-index: 2;"  class="cursor inn ">
+        <div class="colo" style="font-size: 10px;">
+         <span class="cod"> &#60; </span>
+         <span class="cod"> &#45; </span>
+         <span class="cod"> &#62; </span>
+        </div>
+      </div>
+    
+      <div class="social-icons">
+        <a href="#" class="icon animate__animated animate__fadeInLeft animate__delay-2s"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon animate__animated animate__fadeInLeft animate__delay-2s"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon animate__animated animate__fadeInLeft animate__delay-2s"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <section style="height: 100vh;">
+      <nav class="navMenu" style="z-index: 99;">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#" style="margin-left: 15px;">Portfolio</a>
+        <a href="#" style="margin-left: 26px;">Contact</a>
+        <div class="dot" style="z-index: 99;"></div>
+      </nav>
+        <div class="header-container">
+          <!-- <img src="image540px.png" alt="Image" class="header-image"> -->
+          <h1 class="header" style="font-size: 7rem; top: 23%;"><span style="font-size: 2rem; color: rgba(255, 255, 255, 0.621);">Where Ideas Take Flight</span><br>Portfolio</h1>
+        </div>
+      
+        <div class="containll" speed="10">
+          <div class="scrolling-text">
+            <h2 class="scrolling-text-content">Where Ideas Take Flight</h2>
+          </div>
+        </div>
+
+        <a href="#thanks"><div id="section10" class="demo">
+            <h6 style="margin-left: -4px; margin-top: 10px; color: white;">scroll</h6>
+        </div></a>
+      </section>
+
+      <section style="height: 100vh; background-color: black; padding: 10vw;">
+        <div class="gallery">
+          <div class="gallery__column">
+            <a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Jessica Felicio" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
+              </figure>
+            </a>
+        
+            <a href="https://unsplash.com/@oladimeg" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Oladimeji Odunsi</figcaption>
+              </figure>
+            </a>
+        
+            <!-- <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Alex Perez" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
+              </figure>
+            </a> -->
+          </div>
+          
+          <div class="gallery__column">
+            <a href="https://unsplash.com/@hikiapp" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Hikiapp" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Hikiapp</figcaption>
+              </figure>
+            </a>
+            
+            <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Ivana Cajina" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
+              </figure>
+            </a>
+        
+            <!-- <a href="https://unsplash.com/@j_erhunse" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/vp9mRauo68c/300x500" alt="Portrait by Jeffery Erhunse" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Jeffery Erhunse</figcaption>
+              </figure>
+            </a> -->
+          </div>
+          
+          <div class="gallery__column">
+            <a href="https://unsplash.com/@marilezhava" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/Xm9-vA_bhm0/300x500" alt="Portrait by Mari Lezhava" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Mari Lezhava</figcaption>
+              </figure>
+            </a>
+            
+            <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Ethan Haddox" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
+              </figure>
+            </a>
+        
+            <!-- <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Amir Geshani" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
+              </figure>
+            </a> -->
+          </div>
+          
+          <div class="gallery__column">
+            <a href="https://unsplash.com/@nixcreative" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Tyler Nix" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Tyler Nix</figcaption>
+              </figure>
+            </a>
+        
+            <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Jasmin Chew" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
+              </figure>
+            </a>
+            
+            <!-- <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
+              <figure class="gallery__thumb">
+                <img src="https://source.unsplash.com/XZkEhowjx8k/300x500" alt="Portrait by Dima DallAcqua" class="gallery__image">
+                <figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
+              </figure>
+            </a> -->
+          </div>
+        </div>
+      </section>
+
+      <section style="height: 100vh; background-color: rgb(0, 0, 0); position: relative; margin-top: 100vh !important;">
+
+        <div class="outerdiv">
+            <div class="innerdiv">
+              <!-- div1 -->
+              <div class="div1 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name">Daniel Clifford</p>
+                    <p class="designation">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review">
+                  <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4>
+                <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+                </div>
+              </div>
+              <!-- div2 -->
+              <div class="div2 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name">Jonathan Walters</p>
+                    <p class="designation">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review">
+                  <h4>The team was very supportive and kept me motivated</h4>
+                <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+                </div>
+              </div>
+              <!-- div3 -->
+              <div class="div3 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name dark">Kira Whittle</p>
+                    <p class="designation dark">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review dark">
+                  <h4>Such a life-changing experience. Highly recommended!</h4>
+                  <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of experience. It certainly helped me land a job as a full-stack 100% recommend! ”</p>
+                </div>
+              </div>
+              <!-- div4 -->
+              <div class="div4 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name dark">Jeanette Harmon</p>
+                    <p class="designation dark">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review dark">
+                  <h4>An overall wonderful and rewarding experience</h4>
+                <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+                </div>
+              </div>
+              <!-- div5 -->
+              <div class="div5 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name">Patrick Abrams</p>
+                    <p class="designation">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review">
+                  <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h4>
+                <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section style="height: 200px; background-color: black; margin-top: 20px;">
+          <article id="wrap">
+              <article id="lightings">
+                  <section id="one" class="sec">
+                      <section id="two" class="sec">
+                          <section id="three" class="sec">
+                              <section id="four" class="sec">
+                                  <section id="five" class="sec">
+                                      
+                                  </section>
+                              </section>
+                          </section>
+                      </section>
+                  </section>
+              </article>
+          </article>
+         </section>
+  
+         <section style="height: 5vh; text-align: center; border-top: 1px solid white;">
+          <h1 style="font-size: 10px; color: white; margin-top: 10px;">2023 All rights reserved. Custom Designed & Developed by Husnain Umer.</h1>
+         </section>
+
+
+    <script>
+        $(document).ready(function() {
+    var containlls = $('.containll');
+
+    if (containlls.length) {
+        containlls.each(function() {
+            var containll = $(this);
+
+            // Support small text - copy to fill screen width
+            if (containll.find('.scrolling-text').outerWidth() < $(window).width()) {
+                var windowToScrolltextRatio = Math.round($(window).width() / containll.find('.scrolling-text').outerWidth()),
+                    scrollTextContent = containll.find('.scrolling-text .scrolling-text-content').text(),
+                    newScrollText = '';
+                for (var i = 0; i < windowToScrolltextRatio; i++) {
+                    newScrollText += ' ' + scrollTextContent;
+                }
+                containll.find('.scrolling-text .scrolling-text-content').text(newScrollText);
+            }
+
+            // Init variables and config
+            var scrollingText = containll.find('.scrolling-text'),
+                scrollingTextWidth = scrollingText.outerWidth(),
+                scrollingTextHeight = scrollingText.outerHeight(true),
+                startLetterIndent = parseInt(scrollingText.find('.scrolling-text-content').css('font-size'), 10) / 4.8,
+                startLetterIndent = Math.round(startLetterIndent),
+                scrollAmountBoundary = Math.abs($(window).width() - scrollingTextWidth),
+                transformAmount = 0,
+                leftBound = 0,
+                rightBound = scrollAmountBoundary,
+                transformDirection = containll.hasClass('left-to-right') ? -1 : 1,
+                transformSpeed = 200;
+
+            // Read transform speed
+            if (containll.attr('speed')) {
+                transformSpeed = containll.attr('speed');
+            }
+        
+            // Make scrolling text copy for scrolling infinity
+            containll.append(scrollingText.clone().addClass('scrolling-text-copy'));
+            containll.find('.scrolling-text').css({'position': 'absolute', 'left': 0});
+            containll.css('height', scrollingTextHeight);
+        
+            var getActiveScrollingText = function(direction) {
+                var firstScrollingText = containll.find('.scrolling-text:nth-child(1)');
+                var secondScrollingText = containll.find('.scrolling-text:nth-child(2)');
+        
+                var firstScrollingTextLeft = parseInt(containll.find('.scrolling-text:nth-child(1)').css("left"), 10);
+                var secondScrollingTextLeft = parseInt(containll.find('.scrolling-text:nth-child(2)').css("left"), 10);
+        
+                if (direction === 'left') {
+                    return firstScrollingTextLeft < secondScrollingTextLeft ? secondScrollingText : firstScrollingText;
+                } else if (direction === 'right') {
+                    return firstScrollingTextLeft > secondScrollingTextLeft ? secondScrollingText : firstScrollingText;
+                }
+            }
+        
+            $(window).on('wheel', function(e) {
+                var delta = e.originalEvent.deltaY;
+                
+                if (delta > 0) {
+                    // going down
+                    transformAmount += transformSpeed * transformDirection;
+                    containll.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(10deg)');
+                }
+                else {
+                    transformAmount -= transformSpeed * transformDirection;
+                    containll.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(-10deg)');
+                }
+                setTimeout(function(){
+                    containll.find('.scrolling-text').css('transform', 'translate3d('+ transformAmount * -1 +'px, 0, 0)');
+                }, 10);
+                setTimeout(function() {
+                    containll.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(0)');
+                }, 500)
+        
+                // Boundaries
+                if (transformAmount < leftBound) {
+                    var activeText = getActiveScrollingText('left');
+                    activeText.css({'left': Math.round(leftBound - scrollingTextWidth - startLetterIndent) + 'px'});
+                    leftBound = parseInt(activeText.css("left"), 10);
+                    rightBound = leftBound + scrollingTextWidth + scrollAmountBoundary + startLetterIndent;
+        
+                } else if (transformAmount > rightBound) {
+                    var activeText = getActiveScrollingText('right');
+                    activeText.css({'left': Math.round(rightBound + scrollingTextWidth - scrollAmountBoundary + startLetterIndent) + 'px'});
+                    rightBound += scrollingTextWidth + startLetterIndent;
+                    leftBound = rightBound - scrollingTextWidth - scrollAmountBoundary - startLetterIndent;
+                }
+            });
+        })
+    }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Services - Husnain</title>
+    <link rel="icon" type="image/x-icon" href="flafel.jpeg">
+    <meta name="description"
+        content="Husnain Umer's portfolio showcasing web development projects, HTML tutorials, and more.">
+    <meta name="keywords" content="husnain, umer, husnain-umer, husnain-umer-portfolio, portfolio">
+    <meta name="author" content="Husnain umer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="english">
+    <meta name="rating" content="safe for kids">
+    <meta name="copyright" content="Copyright 2022">
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- <meta http-equiv="refresh" content="15"> -->
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelectorAll(".cursor");
+            const links = document.querySelectorAll(".link");
+            const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+            window.addEventListener("mousemove", (e) => {
+                let x = e.pageX;
+                let y = e.pageY;
+
+                cursor.forEach((el) => {
+                    el.style.left = `${x}px`;
+                    el.style.top = `${y}px`;
+
+                    links.forEach((link) => {
+                        link.addEventListener("mouseenter", () => {
+                            el.classList.add("hover");
+                        });
+                        link.addEventListener("mouseleave", () => {
+                            el.classList.remove("hover");
+                        });
+                    });
+                });
+            });
+        });
+</script>
+
+
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" type="text/css" href="mouse.css">
+    <link rel="stylesheet" type="text/css" href="light.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="card.css">
+
+
+    <script src="card.js" defer></script>
+
+    <style>
+  body {
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .navMenu {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+  }
+
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: inline-block;
+    width: 80px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navMenu a:hover {
+    color: rgba(255, 255, 255, 0.725);
+  }
+
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.2s ease-in-out;
+    z-index: 99;
+  }
+
+  .navMenu a:hover ~ .dot {
+    transform: translateX(30px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu a:nth-child(2):hover ~ .dot {
+    transform: translateX(110px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu a:nth-child(3):hover ~ .dot {
+    transform: translateX(200px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu a:nth-child(4):hover ~ .dot {
+    transform: translateX(285px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+    </style>
+    
+</head>
+<body>
+    <div style="z-index: 2;"  class="cursor inn ">
+        <div class="colo" style="font-size: 10px;">
+         <span class="cod"> &#60; </span>
+         <span class="cod"> &#45; </span>
+         <span class="cod"> &#62; </span>
+        </div>
+      </div>
+    
+      <div class="social-icons">
+        <a href="#" class="icon animate__animated animate__fadeInLeft animate__delay-2s"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon animate__animated animate__fadeInLeft animate__delay-2s"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon animate__animated animate__fadeInLeft animate__delay-2s"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <section style="height: 100vh;">
+        <nav class="navMenu" style="z-index: 99;">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#" style="margin-left: 15px;">Portfolio</a>
+            <a href="#" style="margin-left: 26px;">Contact</a>
+            <div class="dot" style="z-index: 99;"></div>
+          </nav>
+        <div class="header-container">
+          <!-- <img src="image540px.png" alt="Image" class="header-image"> -->
+          <h1 class="header" style="font-size: 7rem; top: 23%;"><span style="font-size: 2rem; color: rgba(255, 255, 255, 0.621);">What I Provide</span><br> Services</h1>
+        </div>
+      
+        <div class="containll" speed="10">
+          <div class="scrolling-text">
+            <h2 class="scrolling-text-content">Your Vision, My Expertise.</h2>
+          </div>
+        </div>
+
+        <a href="#thanks"><div id="section10" class="demo">
+            <h6 style="margin-left: -4px; margin-top: 10px; color: white;">scroll</h6>
+        </div></a>
+      </section>
+
+      <section style="height: 100vh; background-color: rgb(0, 0, 0);" class="card-section">
+        <div class="custom-wrapper">
+            <!-- <i class="custom-icon custom-icon-left"></i> -->
+            <ul class="custom-carousel link">
+              <li class="custom-card">
+                <h2>1</h2>
+                <span>CMS Development</span>
+              </li>
+              <li class="custom-card">
+                <h2>2</h2>
+                <span>Front-end Development</span>
+              </li>
+              <li class="custom-card">
+                <h2>3</h2>
+                <span>UI/UX Design</span>
+              </li>
+              <li class="custom-card">
+                <h2>4</h2>
+                <span>Backend Development</span>
+              </li>
+              <li class="custom-card">
+                <h2>5</h2>
+                <span>Shopify Development</span>
+              </li>
+            </ul>
+            <!-- <i class="custom-icon custom-icon-right"></i> -->
+          </div>                    
+      </section>
+
+      <section style="height: 200px; background-color: black; margin-top: 200px;">
+        <article id="wrap">
+            <article id="lightings">
+                <section id="one" class="sec">
+                    <section id="two" class="sec">
+                        <section id="three" class="sec">
+                            <section id="four" class="sec">
+                                <section id="five" class="sec">
+                                    
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </article>
+       </section>
+
+       <section style="height: 5vh; text-align: center; border-top: 1px solid white;">
+        <h1 style="font-size: 10px; color: white; margin-top: 10px;">2023 All rights reserved. Custom Designed & Developed by Husnain Umer.</h1>
+       </section>
+
+    <script>
+        $(document).ready(function() {
+    var containlls = $('.containll');
+
+    if (containlls.length) {
+        containlls.each(function() {
+            var containll = $(this);
+
+            // Support small text - copy to fill screen width
+            if (containll.find('.scrolling-text').outerWidth() < $(window).width()) {
+                var windowToScrolltextRatio = Math.round($(window).width() / containll.find('.scrolling-text').outerWidth()),
+                    scrollTextContent = containll.find('.scrolling-text .scrolling-text-content').text(),
+                    newScrollText = '';
+                for (var i = 0; i < windowToScrolltextRatio; i++) {
+                    newScrollText += ' ' + scrollTextContent;
+                }
+                containll.find('.scrolling-text .scrolling-text-content').text(newScrollText);
+            }
+
+            // Init variables and config
+            var scrollingText = containll.find('.scrolling-text'),
+                scrollingTextWidth = scrollingText.outerWidth(),
+                scrollingTextHeight = scrollingText.outerHeight(true),
+                startLetterIndent = parseInt(scrollingText.find('.scrolling-text-content').css('font-size'), 10) / 4.8,
+                startLetterIndent = Math.round(startLetterIndent),
+                scrollAmountBoundary = Math.abs($(window).width() - scrollingTextWidth),
+                transformAmount = 0,
+                leftBound = 0,
+                rightBound = scrollAmountBoundary,
+                transformDirection = containll.hasClass('left-to-right') ? -1 : 1,
+                transformSpeed = 200;
+
+            // Read transform speed
+            if (containll.attr('speed')) {
+                transformSpeed = containll.attr('speed');
+            }
+        
+            // Make scrolling text copy for scrolling infinity
+            containll.append(scrollingText.clone().addClass('scrolling-text-copy'));
+            containll.find('.scrolling-text').css({'position': 'absolute', 'left': 0});
+            containll.css('height', scrollingTextHeight);
+        
+            var getActiveScrollingText = function(direction) {
+                var firstScrollingText = containll.find('.scrolling-text:nth-child(1)');
+                var secondScrollingText = containll.find('.scrolling-text:nth-child(2)');
+        
+                var firstScrollingTextLeft = parseInt(containll.find('.scrolling-text:nth-child(1)').css("left"), 10);
+                var secondScrollingTextLeft = parseInt(containll.find('.scrolling-text:nth-child(2)').css("left"), 10);
+        
+                if (direction === 'left') {
+                    return firstScrollingTextLeft < secondScrollingTextLeft ? secondScrollingText : firstScrollingText;
+                } else if (direction === 'right') {
+                    return firstScrollingTextLeft > secondScrollingTextLeft ? secondScrollingText : firstScrollingText;
+                }
+            }
+        
+            $(window).on('wheel', function(e) {
+                var delta = e.originalEvent.deltaY;
+                
+                if (delta > 0) {
+                    // going down
+                    transformAmount += transformSpeed * transformDirection;
+                    containll.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(10deg)');
+                }
+                else {
+                    transformAmount -= transformSpeed * transformDirection;
+                    containll.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(-10deg)');
+                }
+                setTimeout(function(){
+                    containll.find('.scrolling-text').css('transform', 'translate3d('+ transformAmount * -1 +'px, 0, 0)');
+                }, 10);
+                setTimeout(function() {
+                    containll.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(0)');
+                }, 500)
+        
+                // Boundaries
+                if (transformAmount < leftBound) {
+                    var activeText = getActiveScrollingText('left');
+                    activeText.css({'left': Math.round(leftBound - scrollingTextWidth - startLetterIndent) + 'px'});
+                    leftBound = parseInt(activeText.css("left"), 10);
+                    rightBound = leftBound + scrollingTextWidth + scrollAmountBoundary + startLetterIndent;
+        
+                } else if (transformAmount > rightBound) {
+                    var activeText = getActiveScrollingText('right');
+                    activeText.css({'left': Math.round(rightBound + scrollingTextWidth - scrollAmountBoundary + startLetterIndent) + 'px'});
+                    rightBound += scrollingTextWidth + startLetterIndent;
+                    leftBound = rightBound - scrollingTextWidth - scrollAmountBoundary - startLetterIndent;
+                }
+            });
+        })
+    }
+});
+    </script>
+</body>
+</html>

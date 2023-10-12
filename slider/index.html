@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Infinite Card Slider JavaScript | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+
+    <style>
+      /* Import Google font - Poppins */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      section {
+        display: flex;
+        padding: 0 35px;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(to left top, #031A9A, #8B53FF);
+      }
+      .custom-wrapper {
+        max-width: 1100px;
+        width: 100%;
+        position: relative;
+      }
+      .custom-wrapper i {
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+      }
+      .custom-wrapper i:active{
+        transform: translateY(-50%) scale(0.85);
+      }
+      .custom-wrapper i:first-child{
+        left: -22px;
+      }
+      .custom-wrapper i:last-child{
+        right: -22px;
+      }
+      .custom-wrapper .custom-carousel{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        border-radius: 0px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+      }
+      .custom-carousel::-webkit-scrollbar {
+        display: none;
+      }
+      .custom-carousel.no-transition {
+        scroll-behavior: auto;
+      }
+      .custom-carousel.dragging {
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+      }
+      .custom-carousel.dragging .custom-card {
+        cursor: grab;
+        user-select: none;
+      }
+      .custom-carousel :where(.custom-card, .custom-img) {
+        display: flex;
+      }
+      .custom-carousel .custom-card {
+        scroll-snap-align: start;
+        height: 342px;
+        list-style: none;
+        background: #fff;
+        cursor: pointer;
+        padding-bottom: 15px;
+        flex-direction: column;
+        border-radius: 0px;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.4s ease;
+      }
+
+      /* Add the pseudo-element */
+      .custom-carousel .custom-card::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0%;
+        background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 0, 0, 0.7));
+        transition: height 0.4s ease-out;
+        z-index: 1;
+      }
+
+      .custom-carousel .custom-card:hover::before {
+        height: 100%;
+      }
+
+      .custom-carousel .custom-card h2, .custom-carousel .custom-card span {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Scale down the card on hover */
+      .custom-carousel .custom-card:hover {
+        transform: scale(0.95);
+      }
+
+      .custom-carousel .custom-card .custom-img {
+        background: #8B53FF;
+        height: 148px;
+        width: 148px;
+        border-radius: 50%;
+      }
+      .custom-card .custom-img img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+      }
+      .custom-carousel .custom-card h2 {
+        font-weight: 500;
+        font-size: 1.56rem;
+        margin: 30px 0 5px;
+      }
+      .custom-carousel .custom-card span {
+        color: #6A6D78;
+        font-size: 1.31rem;
+      }
+
+      @media screen and (max-width: 900px) {
+        .custom-wrapper .custom-carousel {
+          grid-auto-columns: calc((100% / 2) - 9px);
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .custom-wrapper .custom-carousel {
+          grid-auto-columns: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="custom-wrapper">
+        <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+        <ul class="custom-carousel">
+          <li class="custom-card">
+            <h2>1</h2>
+            <span>Sales Manager</span>
+          </li>
+          <li class="custom-card">
+            <h2>2</h2>
+            <span>Web Developer</span>
+          </li>
+          <li class="custom-card">
+            <h2>3</h2>
+            <span>Online Teacher</span>
+          </li>
+          <li class="custom-card">
+            <h2>4</h2>
+            <span>Freelancer</span>
+          </li>
+          <li class="custom-card">
+            <h2>5</h2>
+            <span>Bank Manager</span>
+          </li>
+          <li class="custom-card">
+            <h2>6</h2>
+            <span>App Designer</span>
+          </li>
+        </ul>
+        <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
+      </div>
+    </section>
+  </body>
+</html>

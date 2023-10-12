@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Layout</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .full-height {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .equal-column {
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;  /* Allows the columns to wrap on smaller screens */
+        }
+
+        .image-container {
+            background: url('imagemy.png') no-repeat center center;
+            background-size: cover;
+            height: 50vh;  /* Takes up half the viewport height on mobile */
+        }
+    </style>
+</head>
+<body>
+
+<div class="full-height">
+    <div class="container">
+        <div class="row equal-column">
+            <!-- Image column -->
+            <div class="col-md-6 text-center">
+                <!-- The image will be set as a background image in the custom CSS above -->
+                <img src="imagemy.png" alt="" width="300px">
+            </div>
+            <!-- Content column -->
+            <div class="col-md-6">
+                <h2>About</h2>
+                <p>Your first paragraph content here...</p>
+                <p>Your second paragraph content here...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+</html>

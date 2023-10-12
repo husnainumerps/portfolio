@@ -1,0 +1,53 @@
+body {
+  /* overflow: scroll; */
+  overflow-x: hidden;
+  background: #000;
+}
+
+.containll {
+  position: relative;
+  width: 100vw;
+  /* overflow: hidden; */
+}
+
+.scrolling-text {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.scrolling-text .scrolling-text-content {
+  /* color: #ffffff1f; */
+  font-size: 300px;
+  white-space: nowrap;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  line-height: 1em;
+  margin: 200px 0; 
+  font-weight: 500;
+  /* margin-top: 100px; */
+}
+
+.header {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 2;
+    color: white;
+    font-size: 5rem;
+    margin-right: 20px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-image {
+    /* margin-left: auto; */
+    position: absolute;
+    z-index: 2;
+    right: 20%;
+    bottom: 15%;
+    }

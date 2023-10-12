@@ -1,0 +1,228 @@
+body{
+    font-family: 'poppins';
+}
+
+.mh{
+    font-size: 5rem;
+    text-align: left;
+}
+
+
+
+/* preloader ----------------------*/
+#preloaderrr {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f0f0f;
+    flex-direction: row;
+    /* Changed to row to make content horizontal (since bar will be vertical) */
+}
+
+#percent {
+    color: rgb(179, 10, 10);
+    font-family: 'Neutral Face';
+    margin-right: 20px;
+    /* Space between the percent and the bar */
+}
+
+#bar {
+    height: 60%;     
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden; 
+}
+
+#barconfrm {
+    height: 40%;    
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* cursor ----------------------------*/
+
+.custom-cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* Ensure that the custom cursor doesn't block any interactions */
+    mix-blend-mode: difference;
+    /* This will invert the colors */
+    transition: width 0.3s, height 0.3s;
+    /* Smoothen the size change */
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* White background with slight transparency */
+}
+
+.cursor-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cursor-arrow {
+    font-size: 12px;
+    margin: 0 4px;
+    pointer-events: none;
+    /* Ensure arrows don't interfere with interactions */
+}
+
+.carousel-item:hover~.custom-cursor {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-item:hover~.custom-cursor .cursor-inner {
+    opacity: 1;
+}
+
+
+
+
+/*-----------------*/
+/**cursor**/
+.noc {
+    min-width: 100vw;
+}
+
+.link {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.cursor {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    left: -100px;
+    top: -100px;
+}
+
+.colo {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cod {
+    font-size: 5px;
+    font-weight: 500;
+}
+
+/**.outer {
+  border: 1px solid #f7f7f770;
+}**/
+
+.inn {
+    background: #fffffff6;
+    transition: 150ms ease-out;
+    mix-blend-mode: difference;
+    color: rgba(255, 255, 255, 0);
+}
+
+.cursor.hover {
+    transform: translate(-50%, -100%) scale(4);
+    transition: transform 250ms ease-in-out;
+    color: black;
+}
+
+.inn.hover {
+    background: #f7f7f7;
+    mix-blend-mode: difference;
+}
+
+
+/*
+/* For the thumb (the part you drag) */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0) !important;
+    border-radius: 2px !important;
+}
+
+/* For the track (the background) */
+::-webkit-scrollbar-track {
+    background: lightgrey !important;
+}
+
+/* For the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 2px !important;
+}
+
+
+
+.about {
+
+    font-size: 15vw;
+    font-family: poppins;
+    color: white;
+
+}
+
+
+
+/*Resposnsive---------------------*/
+/* Extra Small Devices (phones) */
+@media (max-width: 575px) {
+    /* CSS rules for screens up to 575px wide */
+    .mh{
+        font-size: 2rem;
+    }
+  }
+  
+  /* Small Devices (tablets and small desktops) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    /* CSS rules for screens between 576px and 767px wide */
+    .mh{
+        font-size: 3rem;
+    }
+  }
+  
+  /* Medium Devices (medium-sized desktops) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for screens between 768px and 991px wide */
+    .mh{
+        font-size: 3rem;
+    }
+  }
+  
+  /* Large Devices (large desktops) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* CSS rules for screens between 992px and 1199px wide */
+    .mh{
+        font-size: 4rem;
+    }
+  }
+  
+  /* Extra Large Devices (extra-large desktops) */
+  @media (min-width: 1200px) {
+    /* CSS rules for screens 1200px and wider */
+    .mh{
+        font-size: 5rem;
+    }
+  }
+  

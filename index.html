@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Husnain Umer - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="flafel.jpeg">
+    <meta name="description"
+        content="Husnain Umer's portfolio showcasing web development projects, HTML tutorials, and more.">
+    <meta name="keywords" content="husnain, umer, husnain-umer, husnain-umer-portfolio, portfolio">
+    <meta name="author" content="Husnain umer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="english">
+    <meta name="rating" content="safe for kids">
+    <meta name="copyright" content="Copyright 2022">
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- <meta http-equiv="refresh" content="15"> -->
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="lines.css">
+    <link rel="stylesheet" type="text/css" href="mouse.css">
+    <link rel="stylesheet" type="text/css" href="icon.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+
+
+    <script src="card.js" defer></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+            integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+            <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css'>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css'>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'><link rel="stylesheet" href="./style.css">
+             -->
+
+
+    
+    
+    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelectorAll(".cursor");
+            const links = document.querySelectorAll(".link");
+            const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+            window.addEventListener("mousemove", (e) => {
+                let x = e.pageX;
+                let y = e.pageY;
+
+                cursor.forEach((el) => {
+                    el.style.left = `${x}px`;
+                    el.style.top = `${y}px`;
+
+                    links.forEach((link) => {
+                        link.addEventListener("mouseenter", () => {
+                            el.classList.add("hover");
+                        });
+                        link.addEventListener("mouseleave", () => {
+                            el.classList.remove("hover");
+                        });
+                    });
+                });
+            });
+        });
+</script>
+
+<style>
+    /* body{
+        background-color: black !important;
+    } */
+
+    .circle-container {
+        position: relative;
+        display: inline-block;
+        z-index: 99;
+        margin-top: 30px;
+    }
+
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: transform 1s ease;
+        z-index: -1;
+    }
+
+    .text {
+        z-index: 1;
+        position: relative;
+    }
+
+    .circle-container:hover .circle {
+        transform: translate(calc(var(--textWidth) - 30px), -50%);
+        /* 30px is the width of the circle */
+    }
+
+    .circle-container:hover .text {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease 0.3s;
+        /* Delayed to make sure it moves after the circle returns */
+    }
+
+
+    .main-contain {
+    position: relative;
+}
+
+.social-icons {
+    position: absolute;
+    top: 80%;
+    left: 11px;
+    transform: translateY(-50%);
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px; /* Spacing between icons */
+    z-index: 99;
+    writing-mode: vertical-rl;
+    font-weight: 100;
+}
+
+.icon {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff; /* Or any color you prefer */
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.icon:hover {
+    color: #555; /* Darken color on hover */
+}
+
+</style>
+
+
+<!-- <style>
+
+section:nth-child(odd) {
+  background: var(--light-green);
+}
+
+section:nth-child(even) {
+  background: var(--dark-gray);
+}
+
+section:first-child {
+  background: var(--green);
+}
+
+#fp-nav ul li a span {
+  background: var(--white);
+}
+
+.fp-overflow {
+  display: flex;
+  height: 100vh;
+}
+
+.fp-overflow > * {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.animate__animated {
+  animation-delay: calc(var(--index) * 0.3s);
+}
+
+@media (min-width: 1300px) {
+  .fp-is-overflow > .fp-overflow {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 575px) {
+  .text {
+    max-width: 90%;
+  }
+}
+
+  </style> -->
+
+</head>
+
+    <body onload="move()" translate="no" >
+
+        <div id="preloaderrr">
+            <div id="bar">
+                <div id="barconfrm"></div>
+            </div>
+        </div>
+        
+        <div>
+            <!-- <section class="section text-center">
+              <h1>sec2</h1>
+            </section>
+            <section class="section text-center">
+            <h1>sec1</h1>
+            </section>
+            <section class="section text-center fp-auto-height-responsive">
+            <h1>sec3</h1>
+            </section>
+            <section class="section">
+              <h1>sec4</h1>
+            </section> -->
+        </div>  
+
+
+                <!--Div's for cursor-->
+        <!--<div class="cursor outer"></div>-->
+        <div style="z-index: 2;"  class="cursor inn ">
+        <div class="colo" style="font-size: 10px;">
+        <span class="cod"> &#60; </span>
+        <span class="cod" style="color: #4d3b3b00;"> &#45; </span>
+        <span class="cod"> &#62; </span>
+        </div>
+        </div>
+        
+        
+
+    <div id="wrap">
+        <section class="contain">
+            <div class="navbar">
+                <div class="menu">
+                    <h3 class="logo">Portfolio.</h3>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-contain" >
+                <div class="social-icons">
+                    <a href="#" class="icon animate__animated animate__fadeInLeft animate__delay-2s">Facebook</a>
+                    <a href="#" class="icon animate__animated animate__fadeInLeft animate__delay-2s">Instagram</a>
+                    <a href="#" class="icon animate__animated animate__fadeInLeft animate__delay-2s">Linkedin</a>
+                </div>            
+                <div class="main">
+                    <header>
+                        <div class="overlay">
+                            <div class="inner">
+                                <h1 class="animate__animated animate__fadeInUp animate__delay-2s mh" style="font-family: poppins;">
+                                    "Crafting pixels,
+                                    design → beyond aesthetics,
+                                    digital canvases that resonate."
+                                </h1>
+                                <a href="#thanks"><div id="section10" class="demo">
+                                    <h6 style="margin-left: -4px; margin-top: 10px; color: white;">scroll</h6>
+                                </div></a>
+                                <div class="lines">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="shadow one"></div>
+                <div class="shadow two"></div>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="index.html" style="--i: 0.05s;">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" style="--i: 0.1s;">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html" style="--i: 0.15s;">Services</a>
+                    </li>
+                    <li>
+                        <a href="Portfolio.html" style="--i: 0.2s;">Portfolio</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" style="--i: 0.25s;"></a>
+                    </li> -->
+                    <li>
+                        <a href="contact.html" style="--i: 0.3s;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+    <section style="height: 100vh; background-color: black; display: flex; justify-content: center; align-items: center;" id="thanks">
+        <div class="container">
+            <div class="row">
+                <div class="offset-1 col-5 align-items-center" style="padding: 100px; padding-top: 0px;">
+                    <img src="image540px.png" alt="" style="max-height: 100%; max-width: 100%;">
+                    <h1 style="z-index: 999; color: white; font-size: 30px; text-align: center; margin-top: 10px;">Husnain Umer</h1>
+                </div>
+                <div class="col-5" style="color: white; text-align: start; overflow: hidden;">
+                    <h1 style="font-size: min(13vw, 14rem); font-family: sens; margin: 0px; padding: 0px;" class="animate__animated animate__fadeInUp">About</h1>
+                    <h6 style="font-size: 1rem; margin: 0px; padding: 0px;">I am a META-certified front-end developer, known for crafting websites that refuse to be scrolled past. My expertise in Shopify and intuitive UI/UX design ensures every project isn't just seen, but truly experienced. With a dynamic blend of design and functionality, I create digital spaces that demand attention and engagement.</h6>
+                    <div class="circle-container">
+                        <div class="circle"></div>
+                        <span class="text" id="hoverText">More about me</span>
+                    </div>
+                    <div class="footer-social-links">
+                        <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="height: 20vh; background-color: black; text-align: center; color: white;">
+        <h1 style="font-size: min(13vw, 14rem); font-family: sens; margin: 0px; padding: 0px;">Services</h1>
+        <p>Tailored strategies for digital success. Proficient in UX/UI, responsive design, and modern aesthetics.<br> Elevate your brand's online impact.</p>
+    </section>
+    
+    <section class="card-section" style="height: 90vh; overflow: hidden;">
+        <div class="custom-wrapper">
+          <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+          <ul class="custom-carousel link">
+            <li class="custom-card">
+              <h2 style="font-weight: 600;">CMS Development</h2>
+              <span>Tailored CMS Mastery</span>
+              <p>Dive into bespoke CMS solutions tailored to your unique requirements. Leveraging the power of PHP, MySQL, and a suite of modern technologies, we ensure your content is managed, displayed, and optimized seamlessly. Whether you're looking to revamp an existing system or build from scratch, our expertise ensures a smooth digital content journey.</p>
+            </li>
+            <li class="custom-card">
+              <h2 style="font-weight: 600;">Front End Development</h2>
+              <span>Pixels to Life</span>
+              <p> Transform your vision into a digital reality with our front-end development services. Utilizing the latest in HTML5, CSS3, and cutting-edge JavaScript frameworks, we craft experiences that captivate, engage, and resonate with your audience. Every pixel is meticulously placed to ensure responsiveness and visual appeal across all devices.</p>
+            </li>
+            <li class="custom-card">
+              <h2 style="font-weight: 600;">Back End Development</h2>
+              <span>Digital Backbone</span>
+              <p>Power your digital platform with our robust back-end solutions. From the intricacies of Node.js to the versatility of Python and the robustness of Ruby on Rails, we build the foundation that ensures peak performance, top-tier security, and scalability. Trust in a backend that supports your growth and adapts to your evolving needs.</p>
+            </li>
+            <li class="custom-card">
+              <h2 style="font-weight: 600;">UI/UX Design</h2>
+              <span>Design That Resonates</span>
+              <p>Merging aesthetics with functionality, our UI/UX designs stand out in the digital landscape. With tools like Figma, Sketch, and Adobe XD at our fingertips, we create interfaces that are not only visually stunning but also intuitively user-friendly. Dive into a user experience meticulously crafted to drive engagement and elevate user satisfaction.</p>
+            </li>
+            <li class="custom-card">
+              <h2 style="font-weight: 600;">Shopify Development</h2>
+              <span>Elevate Your E-commerce</span>
+              <p>Propel your e-commerce venture to new heights with our specialized Shopify expertise. From custom theme designs to intricate app integrations, our mastery in Liquid coding and the Shopify ecosystem ensures your online store is a cut above the rest. Whether you're launching a new store or refining an existing one, we're here to make your e-commerce vision a reality.</p>
+            </li>
+          </ul>
+          <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
+        </div>
+      </section>
+    
+      <section style="background-color: black; color: white; display: flex; align-items: center; justify-content: center; height: 20vh;" >
+        <div class="row">
+            <div class="col-12">
+                <div class="circle-container">
+                    <div class="circle"></div>
+                    <span class="text" id="hoverText">Collaborate Now!</span>
+                </div>
+            </div>
+        </div>
+        
+      </section>
+
+      <section style="background-color: black; color: white; text-align: center; padding-top: 20vh;">
+        <h1 style="font-size: min(13vw, 14rem); font-family: sens; margin: 0px; padding: 0px;">Portfolio</h1>
+        <p>Showcasing my diverse projects, each reflecting creativity, skill, and dedication.</p>
+        <div class="new-wrapper">
+            <div class="new-gallery">
+                <div class="new-gallery__item new-gallery__item--1">
+                    <a href="#" class="new-gallery__link">
+                        <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" class="new-gallery__image" />
+                        <div class="new-gallery__overlay">
+                            <span>Eating Panda</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="new-gallery__item new-gallery__item--2">
+                    <a href="#" class="new-gallery__link">
+                        <img src="https://images.unsplash.com/reserve/wrev1ljvQ6KlfyljCQG0_lion.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80" class="new-gallery__image" />
+                        <div class="new-gallery__overlay">
+                            <span>lo</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="new-gallery__item new-gallery__item--3">
+                    <a href="#" class="new-gallery__link">
+                        <img src="https://images.unsplash.com/photo-1521651201144-634f700b36ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="new-gallery__image" />
+                        <div class="new-gallery__overlay">
+                            <span>Elephants in a field</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="new-gallery__item new-gallery__item--4">
+                    <a href="#" class="new-gallery__link">
+                        <img src="https://images.unsplash.com/photo-1484406566174-9da000fda645?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2135&q=80" class="new-gallery__image" />
+                        <div class="new-gallery__overlay">
+                            <span>Buck in the wild</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="new-gallery__item new-gallery__item--5">
+                    <a href="#" class="new-gallery__link">
+                        <img src="https://images.unsplash.com/photo-1500479694472-551d1fb6258d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="new-gallery__image" />
+                        <div class="new-gallery__overlay">
+                            <span>A little fox</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="new-gallery__item new-gallery__item--6">
+                    <a href="#" class="new-gallery__link">
+                        <img src="https://images.unsplash.com/photo-1460999158988-6f0380f81f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="new-gallery__image" />
+                        <div class="new-gallery__overlay">
+                            <span>Group of horses</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    </section>
+    <!-- <section style="height: 100vh; background-image: url('your-image-url.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: red;"> -->
+    <section style="height: 100vh; background-color: black;">
+        <div class="container">
+            <div class="row">
+                <!-- Your content goes here -->
+            </div>
+        </div>
+    </section>
+    
+    <section style="height: 100vh; background-color: blue;">
+        
+    </section>
+    <section style="height: 100vh; background-color: rgb(0, 0, 0);">
+    
+    
+    </section>
+</div>
+
+
+    <!-- <script src="fullpage-scroll.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var fps = new FullPageScroll('wrap');
+        });
+    </script> -->
+    <script src="Menu.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const textElements = document.querySelectorAll('[id="hoverText"]');
+  const circleElements = document.querySelectorAll('.circle');
+
+  textElements.forEach((textElement) => {
+    const textWidth = textElement.offsetWidth;
+    circleElements.forEach((circleElement) => {
+      circleElement.style.setProperty('--textWidth', textWidth + 'px');
+    });
+  });
+});
+    </script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js'></script>
+<script>
+  new fullpage("#fullpage", {
+navigation: true,
+licenseKey: "gplv3-license",
+onLeave: function (origin, destination, direction, trigger) {
+  handleAnimations(destination);
+}
+});
+
+const handleAnimations = (destination) => {
+if (window.matchMedia("(min-width: 1300px)").matches) {
+  const destinationAnimatedEls = destination.item.querySelectorAll(
+    ".animate__animated"
+  );
+  for (const el of destinationAnimatedEls) {
+    const dataset = el.dataset;
+    el.classList.add(dataset.animation);
+    if (el.classList.contains("last")) {
+      el.addEventListener("animationend", () => {
+        destination.item.querySelector(".fp-overflow").style.overflow =
+          "auto";
+      });
+    }
+  }
+}
+};
+</script>
+
+</body>
+
+</html>

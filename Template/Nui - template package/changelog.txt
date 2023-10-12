@@ -1,0 +1,169 @@
+//////////////////////////////////////////////////////////
+
+Nui - Creative Portfolio Showcase HTML Website Template
+
+Changelog
+
+//////////////////////////////////////////////////////////
+
+
+======================
+Updating information:
+======================
+
+Explanation: Because of the nature of the HTML, it is not possible to use dynamic features to update the template automatically. All code changes and updates must be made manually!
+
+IMPORTANT!: Before you proceed to update, make sure that you have made copies of all the template files, 
+in case something goes wrong then you can restore the previous version.
+
+The best way to update the template is to use some file comparison software to compare the differences between the old and new template versions (I recommend “WinMerge”: http://winmerge.org/). Then make the necessary changes. I know this may be time-consuming, but unfortunately, there is no easier solution.
+
+
+
+---------------------
+v1.6 - 13 March 2023
+---------------------
+
+- New: The light style can be used as the default style (more info in the documentation).
+- Updated: "jQuery" to the latest version
+- Updated: "Smooth Scrollbar" to the latest version
+- Updated: Documentation ("Customization & Styles" section).
+- Improved: Minor CSS improvements
+
+
+Changed template files:
+=======================
+
+theme.css
+theme.js
+Documentation ("Customization & Styles" section)
+
+
+
+------------------------
+v1.5 - 11 February 2023
+------------------------
+
+- New: Added new page "portfolio-split.html".
+- New: Added new page "portfolio-split-reverse.html".
+- New: Added new page "portfolio-hover-carousel.html".
+- New: Added new page "portfolio-list-thumb.html".
+- New: Colored button style added to portfolio grid overlay filter.
+- New: Classic portfolio grid filter (includes three positions and two styles).
+- Fixed: Page header image size issue.
+- Fixed: Portfolio list item image issue.
+- Fixed: Portfolio list item video issue.
+- Fixed: Portfolio grid item video issue.
+- Fixed: Page nav aligns issue.
+- Fixed: Page nav image cover issue.
+- Fixed: Template style switch issue.
+- Fixed: Content carousel navigation issue.
+- Improvements: Minor CSS Improvements.
+- Improvements: Minor JS Improvements.
+
+
+Changed template files:
+=======================
+
+theme.css
+light-style.css
+theme.js
+All .html files
+
+
+
+--------------------------
+v1.4.1 - 14 November 2022
+--------------------------
+
+- Updated: Documentation ("Customization & Styles" section).
+- Improved: file "theme.js" (style switch section).
+
+
+Changed template files:
+=======================
+
+theme.js
+
+
+
+------------------------
+v1.4 - 08 November 2022
+------------------------
+
+- Fixed: Parallax issue on the portfolio grid if the creative layout is enabled.
+- Fixed: Portfolio list layout issue on small screens.
+- Fixed: Portfolio list item title color issue if the light style is enabled.
+- Improved: Magic cursor position.
+- Improved: File "helper.css".
+- Improved: Minor CSS improvements.
+
+
+Changed template files:
+=======================
+
+theme.css
+light-style.css
+helper.css
+theme.js
+
+
+
+
+-------------------------
+v1.3 - 27 September 2022
+-------------------------
+
+- Fixed: Light background image issue on the fullscreen slider.
+
+
+Changed template files:
+=======================
+
+theme.js
+
+
+
+
+-------------------------
+v1.2 - 20 September 2022
+-------------------------
+
+- Fixed: Next project position issue on the project page.
+- Fixed: Some animation issues on page transitions.
+- Improved: Minor js code improvements.
+
+
+Changed template files:
+=======================
+
+theme.js
+
+
+
+
+----------------------
+v1.1 - 25 August 2022
+----------------------
+
+- New: Added page "contact-simple.html"
+- Improved: Page header parallax
+- Improved: Minor CSS improvements
+
+
+Changed template files:
+=======================
+
+theme.css
+theme.js
+
+
+----------------------
+v1.0 - 20 August 2022
+----------------------
+
+Initial Release.
+
+
+
+
